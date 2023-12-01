@@ -113,10 +113,12 @@ input{
 input:focus{
 	outline:none;
 	background-color:#B5B9BA;
+	box-shadow:5px 5px 5px rgba(255,255,255,.5);
 }
 textarea:focus{
 	outline:none;
 	background-color:#B5B9BA;
+	box-shadow:5px 5px 5px rgba(255,255,255,.5);
 }
 input[type="submit"]{
 	background-color:#B5B9BA;

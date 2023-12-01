@@ -1,0 +1,208 @@
+html{
+	font-size:16px;
+}
+header{
+	position:fixed;
+	top:0;
+	z-index:10;
+	width:99.44%;
+	left:0;
+	right:0;
+}
+.head{
+	width:100%;
+	height:auto;
+	padding:0;
+	top:0;
+	background-color:white;
+	border:5px solid rgba(179,0,0);
+	margin:0 auto;
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:space-around;
+	align-items: center;
+	text-align:center;
+}
+.head img{
+	display:inline-block;
+	width:80px;
+	height:auto;
+	margin:0 auto;
+}
+.name{
+	display:inline-block;
+	color:black;
+	text-shadow: 1px 1px red;
+	margin:0 auto;
+	width:30%;
+}
+.head a{
+	width:30%;
+	margin:0 auto;
+}
+.head a button{
+	background-color:black;
+	color:white;
+	border:none;
+	border-radius:5px;
+	padding:5px;
+}
+.head a button:hover{
+	background-color:white;
+	border: 2px solid black;
+	border-radius:5px;
+	color:black;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,.24);
+	transition: all 1s;
+	padding:10px;
+	cursor:pointer;
+}
+.head a button:active{
+	background-color:rgba(179,0,0);
+	transition:all .2s;
+}
+body{
+	display:flex;
+	text-align:center;
+	justify-content:center;
+	align-items:center;
+	background:black;
+	color:white;
+	position:relative;
+	top:8rem;
+	flex-flow:row wrap;
+}
+.gas{
+	display:grid;
+	grid-template: 1fr 1fr 1fr/ 1fr 2fr;
+	text-align:center;
+	justify-content:center;
+	align-items:stretch;
+	background:black;
+	color:white;
+	position:relative;
+	top:8rem;
+	padding:2rem;
+}
+.talk{
+	grid-area: 1 / 1 / 4 / 2;
+	text-align:center;
+	border: 5px solid rgba(179,0,0);
+	font-size:1.5rem;
+	background-color:#B5B9BA;
+	color:black;
+	justify-content:center;
+}
+.talk ul{
+	list-style-position:inside;
+}
+.heat{
+	grid-area: 1 / 2 / 2 / 3;
+}
+.heat img{
+	max-width:60%;
+	height:auto;
+	border: 5px solid rgba(179,0,0);
+}
+.heat figcaption{
+	padding:10px;
+}
+.handg{
+	grid-area: 2 / 2 / 3 / 3;
+}
+.handg img{
+	max-width:60%;
+	height:auto;
+	border: 5px solid rgba(179,0,0);
+}
+.handg figcaption{
+	padding:10px;
+}
+.wmh{
+	grid-area: 3 / 2 / 4 / 3;
+}
+.wmh img{
+	max-width:60%;
+	height:auto;
+	border: 5px solid rgba(179,0,0);
+}
+.wmh figcaption{
+	padding:10px;
+}
+button{
+	color:black;
+	padding:5px;
+	box-shadow:5px 5px 5px rgba(0,0,0,.5);
+}	
+button:hover{
+	color:red;
+	padding:10px;
+	transition:all .5s;
+}
+button:active{
+	background-color:black;
+	box-shadow: 2px 2px 5px rgba(0,0,0,.5);
+	transition:all 0s;
+}
+.wood{
+	display:grid;
+	grid-template: 1fr 1fr 1fr/ 1fr 2fr;
+	text-align:center;
+	justify-content:center;
+	align-items:stretch;
+	background:black;
+	color:white;
+	position:relative;
+	padding:2rem;
+	top:8rem;
+}
+.insert{
+	display:grid;
+	grid-template: 1fr/ 1fr 2fr;
+	text-align:center;
+	justify-content:center;
+	align-items:stretch;
+	background:black;
+	color:white;
+	position:relative;
+	padding:2rem;
+	top:8rem;
+}
+.gaslog{
+	display:grid;
+	grid-template: 1fr 1fr / 1fr 2fr;
+	text-align:center;
+	justify-content:center;
+	align-items:stretch;
+	background:black;
+	color:white;
+	position:relative;
+	padding:2rem;
+	top:8rem;
+}
+.gaslog .wmh{
+	grid-area: 2 / 2 / 3 / 3;
+}
+.electric{
+	display:grid;
+	grid-template: 1fr 1fr / 1fr 2fr;
+	text-align:center;
+	justify-content:center;
+	align-items:stretch;
+	background:black;
+	color:white;
+	position:relative;
+	padding:2rem;
+	top:8rem;
+}
+.electric .handg {
+	grid-area: 1/ 2 / 3 / 2;
+}
+.electric .wmh{
+	grid-area: 2 / 2 / 3 / 3;
+}
+@media (max-width:1300px){
+	.talk{
+		padding:2rem;
+	}
+}
