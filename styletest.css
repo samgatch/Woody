@@ -93,7 +93,7 @@ body{
 }
 .home .hht{
 	display:inline-block;
-	width:40%;
+	width:45%;
 }
 .hht img{
 	max-width:50%;
@@ -102,7 +102,7 @@ body{
 }
 .home .empire{
 	display:inline-block;
-	width:40%;
+	width:45%;
 }
 .empire img{
 	max-width:50%;
@@ -186,10 +186,21 @@ footer ul li{
 	.install,.clean,.cap{
 		width:100%;
 	}
-	.htt img, .empire img{
+	.hht{
+		max-width:100%;
+	}
+	.home img{
+		max-width:100%;
+	}
+	.empire{
 		max-width:100%;
 	}
 	body{
 		top:16rem;
+	}
+	.home{
+		flex-flow:column wrap;
+		justify-content:center;
+		align-items:center;
 	}
 }
