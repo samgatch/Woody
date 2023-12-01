@@ -11,12 +11,15 @@ header{
 }
 .head{
 	width:100%;
-	height:80px;
+	height:auto;
 	padding:0;
 	top:0;
 	background-color:white;
 	border:5px solid rgba(179,0,0);
 	margin:0 auto;
+	display:flex;
+	justify-content:center;
+	align-items: center;
 }
 .head img{
 	width:80px;
@@ -25,22 +28,13 @@ header{
 }
 .name{
 	display:inline-block;
-	float:left;
 	color:black;
-	padding: 21.5px 20px;
-	background-color:#B5B9BA;
-	margin:0 auto;
-	border-right: 5px solid rgba(179,0,0);
 	text-shadow: 1px 1px red;
+	margin:0 auto;
 }
 .nav{
 	display:inline-block;
-	float:right;
-	background-color:#B5B9BA;
-	padding:17.5px 20px;
 	margin:0 auto;
-	border-left: 5px solid rgba(179,0,0);
-	border-bottom: 5px solid rgba(179,0,0);
 }
 .nav li{
 	display:inline-block;
@@ -97,28 +91,29 @@ body{
 	width:100%;
 	font-size:1.5rem;
 }
-.home .hp{
+.home .hht{
 	display:inline-block;
 	width:40%;
 }
-.hp img{
+.hht img{
 	max-width:50%;
 	height:auto;
+	border: 5px solid rgba(179,0,0);
 }
-.home .vt{
+.home .empire{
 	display:inline-block;
 	width:40%;
 }
-.vt img{
+.empire img{
 	max-width:50%;
 	height:auto;
+	border: 5px solid rgba(179,0,0);
 }
 .about{
 	background-color:white;
 	border: 5px solid rgba(179,0,0);
 	color:black;
 	padding:20px;
-	grid-auto-template: 1fr/ 1fr;
 }
 .about p{
 	font-size:1.25rem;
@@ -162,6 +157,12 @@ body{
 .service p{
 	font-size: 1.25rem;
 }
+.service h4{
+	font-size: 2rem;
+}
+.service h5{
+	font-size: 1.5rem;
+}
 footer{
 	position:relative;
 	background-color:white;
@@ -169,19 +170,23 @@ footer{
 	border: 5px solid rgba(179,0,0);
 	margin:0 auto;
 	text-align:center;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-flow: row wrap;
 }
 footer ul li{
 	display:inline:block;
 	list-style-type:none;
 }
-@media (max-width:800px){
+@media (max-width:1300px){
 	.service{
 		flex-direction:column;
 	}
 	.install,.clean,.cap{
 		width:100%;
 	}
-	.hp img, .vt img{
+	.htt img, .empire img{
 		max-width:100%;
 	}
 	body{
