@@ -34,7 +34,7 @@ header{
 	margin:0 auto;
 }
 .nav{
-	display:inline-block;
+	display:flex;
 	margin:0 auto;
 }
 .nav li{
@@ -135,8 +135,11 @@ body{
 	padding:2rem;
 	width:80%;
 }
+.about h3{
+	font-size:2rem;
+}
 .about p{
-	font-size:1.25rem;
+	font-size:1.5rem;
 }
 .service{
 	grid-area: 3 / 1 / 4 / 4;
@@ -214,7 +217,7 @@ button:active{
 }
 @media (max-width:1300px){
 	.nav li a button{
-		font-size:2rem;
+		font-size:1.5rem;
 		padding:1.25rem;
 	}
 	.service{
@@ -228,6 +231,7 @@ button:active{
 		align-items:center;
 		justify-content:center;
 		gap:2rem;
+		font-size:2rem;
 	}
 	.hht{
 		max-width:100%;
@@ -267,5 +271,8 @@ button:active{
 	.service img{
 		max-width:45%;
 		height:auto;
+	}
+	.about p{
+		font-size:2rem;
 	}
 }
