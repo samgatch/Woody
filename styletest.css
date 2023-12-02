@@ -73,7 +73,8 @@ header{
 	z-index:-1;
 }
 .back img{
-	display:none;
+	width:100%;
+	height:auto;
 }
 body{
 	position:relative;
