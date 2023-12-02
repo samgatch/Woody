@@ -1,5 +1,6 @@
 html{
 	font-size:16px;
+	font-family: 'DM Serif Display', serif;
 }
 header{
 	position:fixed;
@@ -64,10 +65,21 @@ header{
 	background-color:rgba(179,0,0);
 	transition:all .2s;
 }
+.back{
+	width:100%;
+	height:auto;
+	position:fixed;
+	top:2rem;
+	z-index:-1;
+}
+.back img{
+	display:none;
+}
 body{
 	position:relative;
-	top:8rem;
+	top:50rem;
 	background-color:black;
+	margin:0;
 }
 .body{
 	display:flex;
@@ -77,6 +89,10 @@ body{
 	align-items:center;
 	flex-flow:column wrap;
 	gap: 10rem;
+	background-color:black;
+	border-top:5px solid rgba(179,0,0);
+	width:100%;
+	margin:0;
 }
 .home{
 	display:flex;
@@ -86,10 +102,11 @@ body{
 }
 .home h2{
 	width:100%;
+	font-size:2.5rem;
 }
 .home h3{
 	width:100%;
-	font-size:1.5rem;
+	font-size:1.75rem;
 }
 .home .hht{
 	display:inline-block;
@@ -99,6 +116,7 @@ body{
 	max-width:50%;
 	height:auto;
 	border: 5px solid rgba(179,0,0);
+	box-shadow: 12px 12px 0 0 rgba(255,255,255,.24);
 }
 .home .empire{
 	display:inline-block;
@@ -108,12 +126,14 @@ body{
 	max-width:50%;
 	height:auto;
 	border: 5px solid rgba(179,0,0);
+	box-shadow: 12px 12px 0 0 rgba(255,255,255,.24);
 }
 .about{
 	background-color:white;
 	border: 5px solid rgba(179,0,0);
 	color:black;
-	padding:20px;
+	padding:2rem;
+	width:80%;
 }
 .about p{
 	font-size:1.25rem;
@@ -127,20 +147,44 @@ body{
 	flex-wrap:wrap;
 	margin-bottom:10rem;
 }
+.big{
+	padding: 1.25rem 2rem;
+	font-size:1.5rem;
+	box-shadow:5px 5px 5px rgba(255,255,255,.5);
+}
+.big:hover{
+	color:red;
+	transition:all .5s ease-out;
+	padding: 1.5rem 2.25rem;
+	
+}
+.big:active{
+	background-color:black;
+	box-shadow: 2px 2px 5px rgba(0,0,0,.5);
+	transition:all 0s;
+}
 .service h3{
 	width:100%;
+	font-size:2.25rem;
 }
-.install .inst button{
+.service a{
+	width:100%;
+	padding-bottom:2rem;
+}
+button{
 	color:black;
-	padding:5px;
+	padding:1.25rem;
 	box-shadow:5px 5px 5px rgba(0,0,0,.5);
+	font-size:1.25rem;
+	font-family: 'DM Serif Display', serif;
 }	
-.inst button:hover{
+button:hover{
 	color:red;
-	padding:10px;
+	padding:1.5rem;
 	transition:all .5s;
+	cursor:pointer;
 }
-.inst button:active{
+button:active{
 	background-color:black;
 	box-shadow: 2px 2px 5px rgba(0,0,0,.5);
 	transition:all 0s;
@@ -150,12 +194,17 @@ body{
 	color:black;
 	border: 5px solid rgba(179,0,0);
 	overflow:auto;
-	display:grid;
-	display:inline-block;
+	display:inline-flex;
 	width:30%;
+	flex-flow:column wrap;
+	box-shadow: 12px 12px 0 0 rgba(255,255,255,.24);
+}
+.service img{
+	max-width:100%;
 }
 .service p{
 	font-size: 1.25rem;
+	padding:2rem;
 }
 .service h4{
 	font-size: 2rem;
@@ -163,28 +212,22 @@ body{
 .service h5{
 	font-size: 1.5rem;
 }
-footer{
-	position:relative;
-	background-color:white;
-	width:100%;
-	border: 5px solid rgba(179,0,0);
-	margin:0 auto;
-	text-align:center;
-	display:flex;
-	justify-content:center;
-	align-items:center;
-	flex-flow: row wrap;
-}
-footer ul li{
-	display:inline:block;
-	list-style-type:none;
-}
 @media (max-width:1300px){
+	.nav li a button{
+		font-size:2rem;
+		padding:1.25rem;
+	}
 	.service{
 		flex-direction:column;
+		gap:4rem;
+		margin:2rem;
 	}
 	.install,.clean,.cap{
 		width:100%;
+		flex-flow:row wrap;
+		align-items:center;
+		justify-content:center;
+		gap:2rem;
 	}
 	.hht{
 		max-width:100%;
@@ -196,11 +239,33 @@ footer ul li{
 		max-width:100%;
 	}
 	body{
-		top:16rem;
+		top:40rem;
+	}
+	.back{
+		top:12rem;
 	}
 	.home{
 		flex-flow:column wrap;
 		justify-content:center;
 		align-items:center;
+	}
+	.back video{
+		display:none;
+	}
+	.back img{
+		display:block;
+		width:100%;
+		height:auto;
+	}
+	button{
+		font-size:2rem;
+		padding:1.25rem;
+	}
+	.talk{
+		max-width:45%;
+	}
+	.service img{
+		max-width:45%;
+		height:auto;
 	}
 }
